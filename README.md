@@ -51,4 +51,12 @@ O teste de navegador usa Chromium em `/usr/bin/chromium` e WebGL via SwiftShader
 
 Avatar articulado, pets compostos arredondados, olhos, asas e coroas, veículos, árvores, incubadoras translúcidas, sombras, bloom, nuvens e partículas com pool. Existem 40 entradas de catálogo, com famílias visuais compartilhadas; 20 índices de chapéus e dez de asas combinam formas e cores, não são 30 modelos artísticos distintos. Os GLBs RobotExpressive e Parrot ficam no mundo como personagens decorativos animados. Créditos em `public/assets/ASSET-SOURCES.json` e `Docs/ASSETS.md`.
 
-Esta versão tem um ciclo de jogo executável, mas **não corresponde ainda a uma produção AAA completa**. Faltam animação detalhada de incubação/fusão, seleção visual dos ingredientes, música, drop carregável de ovo, combate com investidas de pets, física de veículos, colisão de prédios, escorregadores funcionais e validação Android/LAN real. Não há microtransações, anúncios ou punição por queda. O percurso Obby usa plataformas de salto; pulos precisam ser testados com a criança e ajustados conforme conforto.
+Esta versão tem um ciclo de jogo executável, mas **não corresponde ainda a uma produção AAA completa**. Ainda faltam trilhas de animação mais completas, música, combate com investidas de pets, física de veículos, colisão de prédios, escorregadores funcionais e validação Android/LAN real. Não há microtransações, anúncios ou punição por queda. O percurso Obby usa plataformas de salto; pulos precisam ser testados com a criança e ajustados conforme conforto.
+
+## Reforma visual do simulator
+
+HUD com contadores suaves de moedas/diamantes, menu lateral de pets/inventário/mapas/modo calmo/presentes, joystick em anel e controles circulares. As placas retangulares foram removidas em favor de ícones no chão. O cenário tem piso com studs repetidos, caminhos, cercas coloridas, esteira com LEDs por nível, rolos e setas animadas, cápsulas com ovos pintados e bobinas giratórias. A fusão permite selecionar ingredientes e seis elementos. Bosses têm quatro composições distintas, recompensa de diamantes e ovos dourados coletáveis persistidos entre sessões. O ovo coletado vira item do inventário, sem pose de carregamento nos braços.
+
+Os modelos GLB locais de Quaternius/Three.js continuam integrados; não são modelos oficiais do Roblox. A identidade visual é original e inspirada em simulators. Build e testes Chromium não garantem desempenho em celulares físicos.
+
+`node tests/mobile.mjs` testa viewport Android em landscape (844×390), verifica sobreposição de controles e faz uma fusão por seleção visual. Capturas: `Docs/gameplay.png` e `Docs/mobile.png`.
