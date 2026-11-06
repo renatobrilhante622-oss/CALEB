@@ -1,0 +1,3 @@
+import assert from 'node:assert/strict';import{io}from'socket.io-client';
+const a=io(`http://127.0.0.1:${process.env.PORT||3000}`),b=io(`http://127.0.0.1:${process.env.PORT||3000}`);const event=(s,n)=>new Promise((r,j)=>{const t=setTimeout(()=>j(Error('timeout '+n)),5000);s.once(n,v=>{clearTimeout(t);r(v)})});
+await Promise.all([event(a,'connect'),event(b,'connect')]);let ready=event(a,'room');a.emit('host');const room=await ready;ready=event(b,'room');b.emit('join',room);await ready;ready=event(b,'move');a.emit('move',{x:-30,y:0,z:-25,yaw:0,map:0});assert.equal((await ready).id,a.id);ready=event(b,'boss');a.emit('hit',{id:0});assert.equal((await ready).hp,70);a.disconnect();b.disconnect();console.log('LAN: room, movement and cooperative damage passed');

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "RobotExpressive.glb",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/r170/examples/models/gltf/RobotExpressive/RobotExpressive.glb",
+    "license": "CC0 1.0, Tom\u00e1s Laulh\u00e9 (Quaternius), modifications Don McCurdy",
+    "sha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+    "bytes": 463988
+  },
+  {
+    "name": "Parrot.glb",
+    "source": "https://raw.githubusercontent.com/mrdoob/three.js/r170/examples/models/gltf/Parrot.glb",
+    "license": "CC-BY 3.0, ro.me / Mirada; retain attribution",
+    "sha256": "adcc5dae04d0b16957ce20b7bebb84d41c3bff1c01bf5ab1cf56d06345bc5170",
+    "bytes": 97024
+  }
+]
